@@ -8,6 +8,8 @@
  */
 package ejemplosrepaso;
 
+import java.util.Scanner;
+
 
 public class Ejemplo01 {
 
@@ -19,7 +21,11 @@ public class Ejemplo01 {
         Scanner entrada = new Scanner(System.in);
         String ciudad;
         String pais;
-        System.out.printf("%s%s", ciudad, pais);
+        System.out.println("Ingrese la ciudad donde habita");
+        ciudad = entrada.nextLine();
+        System.out.println("Ingrese el pais donde se encuentra la ciudad");
+        pais = entrada.nextLine();
+        System.out.printf("%s-%s", ciudad, pais);       
     }
     
 }
