@@ -14,6 +14,9 @@
  */
 package ejemplosrepaso;
 
+import java.util.Locale;
+import java.util.Scanner;
+
 /**
  *
  * @author reroes
@@ -21,9 +24,25 @@ package ejemplosrepaso;
 public class Ejemplo05 {
 
     public static void main(String[] args) {
+    
+        Scanner entrada = new Scanner(System.in);
+        entrada.useLocale(Locale.US);
+        
         boolean bandera = true;
+        String salir;
         while (bandera) {
-            System.out.println("Usted está en el ciclo");
+            System.out.println("Usted está en el ciclo"); 
+            salir = entrada.nextLine();
+            salir = salir.toLowerCase();
+            if(salir.equals("si")){
+                bandera = false; 
+                
         }
-    }
+            if(salir.equals("s")){
+                bandera = false;   
+    } 
+        
 }
+    }
+} 
+   
