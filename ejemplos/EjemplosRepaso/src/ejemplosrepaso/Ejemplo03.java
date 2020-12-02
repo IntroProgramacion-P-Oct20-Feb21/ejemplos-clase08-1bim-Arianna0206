@@ -22,6 +22,7 @@ public class Ejemplo03 {
         String pais;
         String region = "";
         int tipoRegion;
+        String mensajeFinal = "";
         System.out.println("Ingrese el tipo los siguientes datos para imprimir "
                 + "la región del Ecuador.\n"
                 + "1 para Región Sierra\n"
@@ -32,27 +33,34 @@ public class Ejemplo03 {
         
         if(tipoRegion==1){
             region = "Región Sierra";
-            System.out.printf("Usted seleccionó: %s\n", region); 
+            //System.out.printf("Usted seleccionó: %s\n", region); 
+            mensajeFinal = String.format("Usted seleccionó: %s\n", region);
         }else{
             if (tipoRegion==2) {
                 region = "Región Costa";
-                System.out.printf("Usted seleccionó: %s\n", region); 
+                //System.out.printf("Usted seleccionó: %s\n", region);
+                mensajeFinal = String.format("Usted seleccionó: %s\n", region);
             }else{
                 if (tipoRegion==3) {
                     region = "Región Amazónica";
-                    System.out.printf("Usted seleccionó: %s\n", region); 
+                    //System.out.printf("Usted seleccionó: %s\n", region);
+                    mensajeFinal = String.format("Usted seleccionó: %s\n", 
+                            region);
                 }else{
                     if (tipoRegion==4) {
                         region = "Región Insular";
-                        System.out.printf("Usted seleccionó: %s\n", region); 
+                        //System.out.printf("Usted seleccionó: %s\n", region);
+                        mensajeFinal = String.format("Usted seleccionó: %s\n", 
+                                region);
                     }else{
-                        System.out.printf("Error, no existe región");    
+                        System.out.printf("Error, no existe región");  
                     }
                           
                     
                 }
             }
         }
+        System.out.printf("%s\n", mensajeFinal);  
          
     }
     
