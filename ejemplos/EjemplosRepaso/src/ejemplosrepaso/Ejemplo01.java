@@ -25,7 +25,7 @@ public class Ejemplo01 {
         ciudad = entrada.nextLine();
         System.out.println("Ingrese el pais donde se encuentra la ciudad");
         pais = entrada.nextLine();
-        System.out.printf("%s-%s", ciudad, pais);       
+        System.out.printf("Ciudad: %s\nPais: %s\n", ciudad, pais);       
     }
     
 }
