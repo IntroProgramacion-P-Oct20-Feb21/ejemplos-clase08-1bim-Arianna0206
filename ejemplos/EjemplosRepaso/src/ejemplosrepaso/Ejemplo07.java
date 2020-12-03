@@ -48,6 +48,6 @@ public class Ejemplo07 {
                     tabla, i, operacion02);
         }
         
-        System.out.printf("%s\n%s\n", cadena01,cadena02);   
+        System.out.printf("%s\n%s\n", cadena01,cadena02);     
     }
 }

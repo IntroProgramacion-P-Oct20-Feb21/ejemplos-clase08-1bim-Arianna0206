@@ -24,6 +24,7 @@ public class Ejemplo08 {
         String ciudad;
         int contador = 1;
         String cadena01 = "";
+        
 
         while (contador <= 5) {
             System.out.println("Ingrese el nombre del trabajador");
@@ -31,14 +32,17 @@ public class Ejemplo08 {
             System.out.println("Ingrese el sueldo del trabajador");
             sueldo = entrada.nextDouble();
             System.out.println("Ingrese la ciudad del trabajador");
-            ciudad = entrada.nextLine();
-
+            entrada.nextLine();//Limpieza buffer
+            ciudad = entrada.nextLine();  
+            
             cadena01 = String.format("%s (%.2f) -%s-\n",
                     nombre,
                     sueldo,
                     ciudad);
+            
+            contador = contador + 1;
 
         }
-        System.out.printf("%s\n", cadena01);
+        System.out.printf("%s\n",cadena01);      
     }
 }
